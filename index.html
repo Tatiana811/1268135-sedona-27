@@ -21,10 +21,10 @@
       </nav>
     </header>
     <main>
-      <h1>Седона-туристический городок в штате Аризона</h1>
+      <h1 class="visually-hidden">Седона-туристический городок в штате Аризона</h1>
       <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul>
           <li>
@@ -72,12 +72,37 @@
           </li>
       </ul>
       </section>
+
       <section>
         <h2>Заинтересовались?</h2>
         <p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button" name="button">Поиск гостиницы В Седоне</button>
-        <img src="img/map.png" width="1200" height="594" alt="Карта">
-        <!-- Здесь будет форма -->
+        
+      <div class="">
+       <form action="https://echo.htmlacademy.ru" method="post">
+         <p>
+          <label for="checkin">Дата заезда:
+            <input type="text" name="checkin" value="24 апреля 2017" id="checkin">
+          </label>
+         </p>
+         <p>
+          <label for="checkout">Дата выезда:
+            <input type="text" name="checkin" value="4 июля 2017" id="checkout">
+          </label>
+         </p>
+         <p>
+           <label for="adults">Взрослые:
+             <input type="text" name="adults" value="2" id="adults">
+           </label>
+           <label for="adults">Дети:
+             <input type="text" name="children" value="0" id="children">
+           </label>
+         </p>
+       </form>
+       <button type="submit">Найти</button>
+        </div>
+
+        <img src="img/map.png" width="1200" height="594" alt="Карта города Седоны">
       </section>
     </main>
 
