@@ -5,48 +5,54 @@
     <title>Отели Седоны</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main=header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип городка Седона">
         </a>
+        <div class="main-menu">
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Отели города Седоны</h1>
+      <h1 class="visually-hidden">Отели города Седоны</h1>
       <section>
-        <h2>Фильтр отелей</h2>
-        <div class="">
-          <h3>Инфраструктура:</h3>
-            <label for="">
-              <input type="checkbox" name="" value="" checked> Бассейн
-            </label>
-            <label for="">
-              <input type="checkbox" name="" value=""> Парковка
-            </label>
-            <label for="">
-              <input type="checkbox" name="" value=""> Wi-Fi
-            </label>
-        </div>
+        <h2 class="visually-hidden">Фильтр отелей</h2>
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li><label for="filter-pool">
+              <input type="checkbox" name="pool" id="filter-pool" checked> Бассейн
+            </label></li>
+            <li><label for="filter-parking">
+              <input type="checkbox" name="parking" id="filter-parking"> Парковка
+            </label></li>
+            <li><label for="filter-wifi">
+              <input type="checkbox" name="wifi" id="filter-wifi"> Wi-Fi
+            </label></li>
+          </ul>
+        </fieldset>
 
-        <div class="">
-          <h3>Тип жилья:</h3>
-            <label for="">
-              <input type="checkbox" name="" value="" checked> Гостиница
-            </label>
-            <label for="">
-              <input type="checkbox" name="" value="" checked> Мотель
-            </label>
-            <label for="">
-              <input type="checkbox" name="" value="" checked> Апартаменты
-            </label>
-        </div>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li><label for="filter-hotel">
+              <input type="checkbox" name="hotel" id="filter-hotel" checked> Гостиница
+            </label></li>
+            <li><label for="filter-motel">
+              <input type="checkbox" name="motel" id="filter-motel" checked> Мотель
+            </label></li>
+            <li><label for="filter-apartments">
+              <input type="checkbox" name="apartments" id="filter-apartments" checked> Апартаменты
+            </label></li>
+          </ul>
+        </fieldset>
 
         <div class="">
           <label for="">Стоимость в сутки (Р):</label>
@@ -56,16 +62,17 @@
       </section>
 
       <section>
+        <h2>Найдено: 3</h2>
         <ul>
           <li>Сортировка:</li>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По рейтингу</li>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
         </ul>
       </section>
 
       <section>
-        <h2>Список отелей</h2>
+        <h2 class="visually-hidden">Список отелей</h2>
         <ul>
           <li>
             <a href="#"><h3>Amara Resort & Spa</h3></a>
